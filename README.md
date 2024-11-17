@@ -1,1 +1,1 @@
-Deployed page is available [here](https://wanomir.github.io/resume-analyst/)
+Deployed page is available [here](https://wanomir.github.io/resume-manager/)
