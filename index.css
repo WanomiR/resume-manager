@@ -1,0 +1,150 @@
+@import url("./vendor/reset.css");
+@import url("./vendor/fonts.css");
+
+:root {
+    --h1-font-size: 40px;
+    --h2-font-size: 28px;
+    --h3-font-size: 22px;
+    --text-font-size: 18px;
+    --caption-font-size: 17px;
+
+    --section-margin: 32px;
+    --card-margin: 20px;
+
+    --text-line-hieght: 1.3;
+    --h1-margin: 16px;
+    --h2-margin: 12px;
+    --h3-mragin: 10px;
+    --text-margin: 4px;
+    --caption-margin: 6px;
+}
+
+.page {
+    /* page settings */
+    margin: 0 auto;
+    padding: 88px 64px 120px 80px;
+    width: 1024px;
+    height: 1440px;
+
+    /* font settings */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+
+    /* a touch of shadow */
+    box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 20%);
+}
+
+.link {
+    all: unset;
+}
+
+.link:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.header {
+    padding: 20px 0 16px;
+    margin-bottom: calc(var(--section-margin) - 16px);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: white;
+}
+
+.header__title {
+    font-size: var(--h1-font-size);
+    font-weight: bold;
+    margin-bottom: var(--h1-margin);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contacts__item {
+    font-size: var(--text-font-size);
+    display: flex;
+}
+
+.contacts__item_digits {
+    padding-top: 2px;
+    font-size: 15px;
+}
+
+.contacts__item-icon {
+    margin-right: 4px;
+    padding-top: 2px;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+
+.section {
+    margin-bottom: var(--section-margin);
+}
+
+.section__title {
+    margin-bottom: var(--h2-margin);
+
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+}
+
+.card {
+    margin-bottom: var(--card-margin);
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__title {
+    margin-bottom: var(--h3-mragin);
+
+    font-size: var(--h3-font-size);
+    font-weight: bold;
+}
+
+.card__subtitle {
+    margin-bottom: var(--caption-margin);
+
+    font-size: var(--caption-font-size);
+    font-style: italic;
+}
+
+.card__dates {
+    font-size: var(--caption-font-size);
+    font-style: italic;
+    margin-bottom: var(--text-margin);
+}
+
+.card__description {
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-hieght);
+    margin-bottom: var(--text-margin);
+}
+
+.card__description_italic {
+    font-style: italic;
+}
+
+.list__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr min-content;
+}
